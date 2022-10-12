@@ -1,0 +1,67 @@
+spring: 
+  api: 
+    correspondence: 
+      context-path: /Correspondence/Initiate
+      hosturl: /test
+      jolt-filename: Correspondence444103-jolt.json
+    customer offer: 
+      context-path: /CustomerOffer/Initiate
+      hosturl: /test
+      jolt-filename: Customer Offer824498-jolt.json
+    customer product and service eligibility: 
+      context-path: /CustomerProductAndServiceEligibility/Evaluate
+      hosturl: /test
+      jolt-filename: Customer Product And Service Eligibility817027-jolt.json
+    customer products and services: 
+      context-path: /CustomerProductsandServices/{customerproductsandservicesId}/Control
+      hosturl: /test
+      jolt-filename: Customer Products and Services484390-jolt.json
+    financial accounting: 
+      context-path: /FinancialAccounting/Initiate
+      hosturl: /test
+      jolt-filename: Financial Accounting430718-jolt.json
+    guideline compliance: 
+      context-path: /GuidelineCompliance/Evaluate
+      hosturl: /test
+      jolt-filename: Guideline Compliance361712-jolt.json
+    issued device administration: 
+      context-path: /IssuedDeviceAdministration/Initiate
+      hosturl: /test
+      jolt-filename: Issued Device Administration262874-jolt.json
+    party lifecycle management: 
+      context-path: /PartyLifecycleManagement/Initiate
+      hosturl: /test
+      jolt-filename: Party Lifecycle Management911332-jolt.json
+    party reference data directory: 
+      context-path: /PartyReferenceDataDirectory/Register
+      hosturl: /test
+      jolt-filename: Party Reference Data Directory292605-jolt.json
+    payment order: 
+      context-path: /PaymentOrder/Initiate
+      hosturl: /test
+      jolt-filename: Payment Order731529-jolt.json
+    position keeping: 
+      context-path: /PositionKeeping/Initiate
+      hosturl: /test
+      jolt-filename: Position Keeping201501-jolt.json
+    product directory: 
+      context-path: /ProductDirectory/Register
+      hosturl: /test
+      jolt-filename: Product Directory563695-jolt.json
+    regulatory compliance: 
+      context-path: /RegulatoryCompliance/Evaluate
+      hosturl: /test
+      jolt-filename: Regulatory Compliance488608-jolt.json
+    sales product agreement: 
+      context-path: /SalesProductAgreement/Evaluate
+      hosturl: /test
+      jolt-filename: Sales Product Agreement247461-jolt.json
+    savings account: 
+      context-path: /SavingsAccount/Initiate
+      hosturl: /test
+      jolt-filename: Savings Account677429-jolt.json
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${mysql_pwd}
+    url: jdbc:mysql://${mysql_url}:3306/camunda
+    username: ${mysql_user}
